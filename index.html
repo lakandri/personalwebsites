@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <nav id="desktop-nav">
+  <!-- <nav id="desktop-nav">
     <div class="logo"></div>
     <div>
       <ul class="nav-links">
@@ -21,7 +21,70 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
+  </nav> -->
+
+  <!-- <nav id="desktop-nav">
+
+    <div class="time-container">
+      <span id="current-time"></span>
+      <span id="current-date"></span>
+    </div>
+    <div class="logo"></div>
+    <div class="time-container">
+      <span id="current-time"></span>
+      <span id="current-date"></span>
+    </div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav> -->
+
+
+  <nav id="desktop-nav">
+    <div class="logo"></div>
+    <div class="time-container">
+      <span id="current-time"></span>
+      <span id="current-date"></span>
+    </div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
   </nav>
+
+
+
+
+  <script>
+    function updateTime() {
+      var now = new Date();
+      var hours = now.getHours();
+      var minutes = now.getMinutes();
+      var seconds = now.getSeconds();
+      hours = hours < 10 ? '0' + hours : hours;
+      minutes = minutes < 10 ? '0' + minutes : minutes;
+      seconds = seconds < 10 ? '0' + seconds : seconds;
+      var currentTime = hours + ':' + minutes + ':' + seconds;
+      var currentDate = now.toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+      document.getElementById('current-time').textContent = currentTime;
+      document.getElementById('current-date').textContent = currentDate;
+    }
+
+    updateTime();
+    setInterval(updateTime, 1000);
+
+  </script>
+
+
   <nav id="hamburger-nav">
     <div class="logo">Manish Lakandri</div>
     <div class="hamburger-menu">
@@ -62,6 +125,8 @@
         <img src="./assets/github.png" alt="My Github profile" class="icon"
           onclick="location.href='https://github.com/manishjrr'" />
       </div>
+      <div class="logo"></div>
+
     </div>
   </section>
   <section id="about">
@@ -76,7 +141,7 @@
           <div class="details-container">
             <img src="./assets/experience.png" alt="Experience icon" class="icon" />
             <h3>Experience</h3>
-            <p>2+ years <br />Frontend Development</p>
+            <p>6+ months <br />Frontend Development</p>
           </div>
           <div class="details-container">
             <img src="./assets/education.png" alt="Education icon" class="icon" />
@@ -90,7 +155,7 @@
           style="animation: spaceBackground 20s linear infinite; background: linear-gradient(to bottom right, #2200cc, #0066ff, #00ccff, #33ffcc, #99ff99, #ffff66); background-size: 200% 200%; border: 2px solid transparent; animation: borderAnimation 5s linear infinite;"> -->
 
         <div class="text-container"
-          style="animation: spaceBackground 20s linear infinite; background: linear-gradient(to bottom right, #2200cc, #0066ff, #1b073b, #6c6337, #4245f9, #2d2d1f); background-size: 200% 200%;">
+          style="animation: spaceBackground 20s linear infinite; background: linear-gradient(to bottom right, #2200cc, #0066ff, #56496b, #6c6337, #4245f9, #2d2d1f); background-size: 200% 200%;">
 
           <p id='portfolio-info' style="font-family: Arial, sans-serif; background-color:red ; color: #e02727;">
           <h3 style="color: white; font-style: italic;"> Welcome to my portfolio!</h3>
@@ -123,7 +188,7 @@
       </div>
     </div>
     </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+    <!-- <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" /> -->
   </section>
   <section id="experience">
     <p class="section__text__p1">Explore My</p>
@@ -158,13 +223,13 @@
               <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
               <div>
                 <h3>UX</h3>
-                <p>Basic</p>
+                <!-- <p>Basic</p> -->
               </div>
             </article>
             <article>
               <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
               <div>
-                <h3>TypeScript</h3>
+                <!-- <h3>TypeScript</h3> -->
                 <p>Basic</p>
               </div>
             </article>
@@ -226,84 +291,56 @@
 
 
 
-    <H2 style="color: aliceblue;">Gardai xu </H2>
-    <!-- <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
+    <H2 style="color: aliceblue;">Gardaiii xu aajai</H2>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-3.png" alt="Project 1" class="project-img" />
           </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
+          <h2 class="experience-sub-title project-title">Delivery App</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/lakandri/fooddelivary'">
+              Github
+            </button>
+            <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Live Demo
+            </button> -->
           </div>
         </div>
-      </div> -->
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Plant App</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick=" location.href='https://github.com/lakandri/plantApp'">
+              Github
+            </button>
+            <!-- <button class=" btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Live Demo
+            </button> -->
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-1.png" alt="Project 3" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Currency Conveter</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/lakandri/currencyConveter'">
+              Github
+            </button>
+            <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Live Demo
+            </button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" /> -->
   </section>
   <section id="contact">
     <p class="section__text__p1">Get in Touch</p>
