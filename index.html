@@ -2,362 +2,312 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="mediaqueries.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manish Lakandri | Portfolio</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Great+Vibes&display=swap"
+    rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 </head>
 
 <body>
-  <!-- <nav id="desktop-nav">
-    <div class="logo"></div>
-    <div>
-      <ul class="nav-links">
+  <div id="particles-js"></div>
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        <a href="#">
+          <img src="assets/mm.jpg" alt="Logo" class="logo-img">
+        </a>
+      </div>
+      <!-- <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-    </div>
-  </nav> -->
-
-  <!-- <nav id="desktop-nav">
-
-    <div class="time-container">
-      <span id="current-time"></span>
-      <span id="current-date"></span>
-    </div>
-    <div class="logo"></div>
-    <div class="time-container">
-      <span id="current-time"></span>
-      <span id="current-date"></span>
-    </div>
-    <div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </nav> -->
-
-
-  <nav id="desktop-nav">
-    <div class="logo"></div>
-    <div class="time-container">
-      <span id="current-time"></span>
-      <span id="current-date"></span>
-    </div>
-    <div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+      <label class="switch">
+        <input type="checkbox" id="darkModeToggle">
+        <span class="slider round"></span>
+      </label> -->
     </div>
   </nav>
 
+  <!-- <header class="hero">
+    <div class="container">
+      <h1 class="animated-text">Hello, I'm <span>Manish Lakandri</span></h1>
+      <p>Frontend Developer / Flutter Enthusiast</p>
+      <a href="./assets/cv.pdf" class="btn">Download CV</a>
+    </div>
+  </header> -->
+  <header class="hero">
+    <div class="container">
+      <h1 class="animated-text">Hello, I'm <span class="name-text">Manish Lakandri</span></h1>
+      <p>Frontend Developer / Flutter Enthusiast</p>
+      <a href="./assets/cv.pdf" class="btn">Download CV</a>
+    </div>
+  </header>
 
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I'm a passionate technologist with a Bachelor's degree in Information Technology. Currently exploring Flutter
+        and Dart to create dynamic user experiences. I thrive on challenges and love to learn and innovate in the field
+        of technology.</p>
+      <img src="./assets/manish.jpg" alt="Manish Lakandri">
+    </div>
+  </section>
 
+  <section id="experience" class="experience">
+    <div class="container">
+      <h2>Experience</h2>
+      <div class="experience-list">
+        <div class="experience-item">
+          <h3>Frontend Development</h3>
+          <p>6+ months experience in Flutter, Dart, Firebase, HTML, CSS, and JavaScript, building responsive and dynamic
+            websites.</p>
+        </div>
+        <div class="experience-item">
+          <h3>Flutter Development</h3>
+          <p>Creating cross-platform mobile applications using Flutter and Dart.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-list">
+        <div class="project-item">
+          <img src="assets/project-1.png" alt="Project 1">
+          <h3>Currency Converter</h3>
+          <p>Description of project one.</p>
+          <a href="https://github.com/lakandri" class="btn">View Project</a>
+        </div>
+        <div class="project-item">
+          <img src="assets/project-2.png" alt="Project 2">
+          <h3>Plant App</h3>
+          <p>Description of project two.</p>
+          <a href="https://github.com/lakandri" class="btn">View Project</a>
+        </div>
+        <div class="project-item">
+          <img src="assets/project-3.png" alt="Project 3">
+          <h3>Delivery App</h3>
+          <p>Description of project three.</p>
+          <a href="https://github.com/lakandri" class="btn">View Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-container">
+        <div class="skill">
+          <h3>HTML</h3>
+          <div class="progress-bar">
+            <div class="progress" style="width: 90%;"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <h3>CSS</h3>
+          <div class="progress-bar">
+            <div class="progress" style="width: 85%;"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <h3>JavaScript</h3>
+          <div class="progress-bar">
+            <div class="progress" style="width: 75%;"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <h3>Flutter</h3>
+          <div class="progress-bar">
+            <div class="progress" style="width: 80%;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form action="#" class="contact-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Manish Lakandri. All Rights Reserved.</p>
+    <div class="social-icons">
+      <a href="https://github.com/lakandri"><img src="./assets/github.png" alt="GitHub"></a>
+      <a href="https://www.linkedin.com/in/manish-lakandri-b236252a2/"><img src="./assets/linkedin.png"
+          alt="LinkedIn"></a>
+    </div>
+  </footer>
 
   <script>
-    function updateTime() {
-      var now = new Date();
-      var hours = now.getHours();
-      var minutes = now.getMinutes();
-      var seconds = now.getSeconds();
-      hours = hours < 10 ? '0' + hours : hours;
-      minutes = minutes < 10 ? '0' + minutes : minutes;
-      seconds = seconds < 10 ? '0' + seconds : seconds;
-      var currentTime = hours + ':' + minutes + ':' + seconds;
-      var currentDate = now.toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
-      document.getElementById('current-time').textContent = currentTime;
-      document.getElementById('current-date').textContent = currentDate;
+    particlesJS('particles-js', {
+      "particles": {
+        "number": {
+          "value": 80,
+          "density": {
+            "enable": true,
+            "value_area": 800
+          }
+        },
+        "color": {
+          "value": "#ffffff"
+        },
+        "shape": {
+          "type": "circle",
+          "stroke": {
+            "width": 0,
+            "color": "#000000"
+          },
+          "polygon": {
+            "nb_sides": 5
+          },
+          "image": {
+            "src": "img/github.svg",
+            "width": 100,
+            "height": 100
+          }
+        },
+        "opacity": {
+          "value": 0.5,
+          "random": false,
+          "anim": {
+            "enable": false,
+            "speed": 1,
+            "opacity_min": 0.1,
+            "sync": false
+          }
+        },
+        "size": {
+          "value": 3,
+          "random": true,
+          "anim": {
+            "enable": false,
+            "speed": 40,
+            "size_min": 0.1,
+            "sync": false
+          }
+        },
+        "line_linked": {
+          "enable": true,
+          "distance": 150,
+          "color": "#ffffff",
+          "opacity": 0.4,
+          "width": 1
+        },
+        "move": {
+          "enable": true,
+          "speed": 6,
+          "direction": "none",
+          "random": false,
+          "straight": false,
+          "out_mode": "out",
+          "bounce": false,
+          "attract": {
+            "enable": false,
+            "rotateX": 600,
+            "rotateY": 1200
+          }
+        }
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": {
+            "enable": true,
+            "mode": "repulse"
+          },
+          "onclick": {
+            "enable": true,
+            "mode": "push"
+          },
+          "resize": true
+        },
+        "modes": {
+          "grab": {
+            "distance": 400,
+            "line_linked": {
+              "opacity": 1
+            }
+          },
+          "bubble": {
+            "distance": 400,
+            "size": 40,
+            "duration": 2,
+            "opacity": 8,
+            "speed": 3
+          },
+          "repulse": {
+            "distance": 200,
+            "duration": 0.4
+          },
+          "push": {
+            "particles_nb": 4
+          },
+          "remove": {
+            "particles_nb": 2
+          }
+        }
+      },
+      "retina_detect": true
+    });
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    const toggleSwitch = document.querySelector('#darkModeToggle');
+    const currentTheme = localStorage.getItem('theme');
+
+    if (currentTheme) {
+      document.documentElement.setAttribute('data-theme', currentTheme);
+      if (currentTheme === 'dark') {
+        toggleSwitch.checked = true;
+      }
     }
 
-    updateTime();
-    setInterval(updateTime, 1000);
+    function switchTheme(e) {
+      if (e.target.checked) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
+      } else {
+        document.documentElement.setAttribute('data-theme', 'light');
+        localStorage.setItem('theme', 'light');
+      }
+    }
 
+    toggleSwitch.addEventListener('change', switchTheme, false);
   </script>
-
-
-  <nav id="hamburger-nav">
-    <div class="logo">Manish Lakandri</div>
-    <div class="hamburger-menu">
-      <div class="hamburger-icon" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <div class="menu-links">
-        <li><a href="#about" onclick="toggleMenu()">About</a></li>
-        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-      </div>
-    </div>
-  </nav>
-  <section id="profile">
-    <div class="section__pic-container">
-      <img src="./assets/manish.jpg" alt="manish  picture" />
-    </div>
-    <div class="section__text">
-      <p class="section__text__p1">Hello, I'm</p>
-      <h1 class="title">Manish Lakandri</h1>
-      <p class="section__text__p2">Frontend Developer / Flutter</p>
-      <div class="btn-container">
-
-
-        <button class="btn btn-color-2" onclick="window.open('./assets/cv.pdf')">
-          Download CV
-        </button>
-        <!-- <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button> -->
-      </div>
-      <div id="socials-container">
-        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
-          onclick="location.href='https://www.linkedin.com/in/manish-lakandri-b236252a2/'" />
-        <img src="./assets/github.png" alt="My Github profile" class="icon"
-          onclick="location.href='https://github.com/manishjrr'" />
-      </div>
-      <div class="logo"></div>
-
-    </div>
-  </section>
-  <section id="about">
-    <p class="section__text__p1">Get To Know More</p>
-    <h1 class="title">About Me</h1>
-    <div class="section-container">
-      <div class="section__pic-container">
-        <img src="./assets/about-pic.jpg" alt="Profile picture" class="about-pic" />
-      </div>
-      <div class="about-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
-            <h3>Experience</h3>
-            <p>6+ months <br />Frontend Development</p>
-          </div>
-          <div class="details-container">
-            <img src="./assets/education.png" alt="Education icon" class="icon" />
-            <h3>Education</h3>
-            <p>BIT</p>
-          </div>
-        </div>
-        <div class="text-container animated-background">
-          <div class="about-me-content">
-            <h3>Welcome to my portfolio!</h3>
-            <p>
-              I'm Manish Lakandriii, a passionate technologist with a Bachelor's degree in Information Technology. My
-              journey in the world of technology is fueled by curiosity and a relentless drive to learn and innovate.
-            </p>
-            <p>
-              Currently, I'm immersing myself in the exciting realm of Flutter and Dart, exploring their capabilities to
-              craft immersive and dynamic user experiences. This journey is just one facet of my continuous pursuit of
-              knowledge and mastery in the ever-evolving landscape of software development.
-            </p>
-            <p>
-              Beyond Flutter and Dart, I thrive on challenges and embrace opportunities to expand my skills across
-              various domains. From web development to data science, I'm committed to honing my expertise and pushing
-              the boundaries of what's possible in the digital realm.
-            </p>
-            <p>
-              Through this portfolio, I invite you to explore my projects, delve into my experiences, and witness the
-              passion and dedication I bring to every endeavor. Join me as I navigate through the intricacies of
-              technology, striving to make meaningful contributions and leave a lasting impact in the digital sphere.
-            </p>
-            <p>Let's connect, collaborate, and innovate together.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="experience">
-    <p class="section__text__p1">Explore My</p>
-    <h1 class="title">Experience</h1>
-    <div class="experience-details-container">
-      <div class="about-containers">
-        <div class="details-container">
-          <h2 class="experience-sub-title">Frontend Development</h2>
-          <div class="article-container">
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>HTML</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>CSS</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Design</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>UX</h3>
-                <!-- <p>Basic</p> -->
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <!-- <h3>TypeScript</h3> -->
-                <p>Basic</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Material UI</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-          </div>
-        </div>
-        <div class="details-container">
-          <h2 class="experience-sub-title">Frontend Development</h2>
-          <div class="article-container">
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Dart</h3>
-                <p>Basic</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Flutter</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3> JS</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Git</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      /> -->
-  </section>
-  <section id="projects">
-    <p class="section__text__p1">Browse My Recent</p>
-    <h1 class="title">Projects</h1>
-
-
-
-
-    <H2 style="color: aliceblue;">Gardaiii xu aajai</H2>
-    <div class="experience-details-container">
-      <div class="about-containers">
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/project-3.png" alt="Project 1" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title project-title">Delivery App</h2>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/lakandri/fooddelivary'">
-              Github
-            </button>
-            <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-              Live Demo
-            </button> -->
-          </div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title project-title">Plant App</h2>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick=" location.href='https://github.com/lakandri/plantApp'">
-              Github
-            </button>
-            <!-- <button class=" btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-              Live Demo
-            </button> -->
-          </div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/project-1.png" alt="Project 3" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title project-title">Currency Conveter</h2>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/lakandri/currencyConveter'">
-              Github
-            </button>
-            <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-              Live Demo
-            </button> -->
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" /> -->
-  </section>
-  <section id="contact">
-    <p class="section__text__p1">Get in Touch</p>
-    <h1 class="title">Contact Me</h1>
-    <div class="contact-info-upper-container">
-      <div class="contact-info-container">
-        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
-        <p><a href="mailto:manishlakandri0@gmail.com">manishlakandri0@gmail.com</a></p>
-      </div>
-      <div class="contact-info-container">
-        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
-        <p><a href="https://www.linkedin.com">LinkedIn</a></p>
-      </div>
-    </div>
-  </section>
-  <footer>
-    <nav>
-      <div class="nav-links-container">
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <p>Copyright &#169; 2023 Manish Lakandri . All Rights Reserved.</p>
-  </footer>
-  <script src="script.js"></script>
 </body>
 
 </html>
