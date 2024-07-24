@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
   text.split('').forEach((char, index) => {
     const span = document.createElement('span');
     span.innerText = char;
-    span.style.setProperty('--i', index);
+    span.style.setProperty('animation-delay', `${index * 0.1}s`);
     textElement.appendChild(span);
   });
 });

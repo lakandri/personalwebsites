@@ -64,19 +64,8 @@ body {
   display: inline-block;
 }
 
-.hero .animated-text span {
+.hero .name-text {
   display: inline-block;
-  opacity: 0;
-  transform: translateY(20px);
-  animation: animateText 0.5s forwards;
-  animation-delay: calc(0.1s * var(--i));
-}
-
-@keyframes animateText {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 .hero p {
@@ -90,7 +79,7 @@ body {
   color: #fff;
   border: none;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: background 1s;
 }
 
 .hero .btn:hover {
@@ -202,7 +191,7 @@ body {
   flex-direction: column;
 }
 
-.contact-form label {
+contact-form label {
   margin-bottom: 0.5rem;
 }
 
@@ -220,7 +209,7 @@ body {
   color: #fff;
   border: none;
   cursor: pointer;
-  transition: background 0.9s;
+  transition: background 0.3s;
 }
 
 .contact-form button:hover {
@@ -319,7 +308,6 @@ input:checked+.slider:before {
   opacity: 0;
   transform: translateY(20px);
   animation: animateText 0.5s forwards;
-  animation-delay: calc(0.1s * var(--i));
 }
 
 @keyframes animateText {

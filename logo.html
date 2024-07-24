@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptic Message</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto Mono', monospace;
+            background-color: #000;
+            color: #0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(36, 36, 36, 1) 100%);
+            animation: background-flicker 3s infinite;
+        }
+
+        @keyframes background-flicker {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.8;
+            }
+        }
+
+        .cryptic {
+            font-size: 1.5rem;
+            text-align: center;
+            white-space: pre-wrap;
+        }
+
+        .cryptic span {
+            display: inline-block;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: animateText 0.5s forwards, flicker 2s infinite;
+        }
+
+        @keyframes animateText {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes flicker {
+
+            0%,
+            19%,
+            21%,
+            23%,
+            25%,
+            54%,
+            56%,
+            100% {
+                opacity: 0.99;
+            }
+
+            20%,
+            24%,
+            55% {
+                opacity: 0.4;
+            }
+
+            22% {
+                opacity: 0.6;
+            }
+
+            26% {
+                opacity: 0.8;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cryptic" id="cryptic-message">
+        Tm90aGluZyB0byBzZWUgaGVyZSwga2VlcCBtb3Zpbmcgb24uLi4KCklmIHlvdSBhcmUgcmVhZGluZyB0aGlzLCB5b3UgYXJlIHNlYXJjaGluZyBmb3Igc2VjcmV0cy4uLgogICAg
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const textElement = document.getElementById('cryptic-message');
+            const text = textElement.innerText;
+            textElement.innerHTML = '';
+
+            text.split('').forEach((char, index) => {
+                const span = document.createElement('span');
+                span.innerText = char;
+                span.style.setProperty('animation-delay', `${index * 0.05}s`);
+                textElement.appendChild(span);
+            });
+        });
+    </script>
+</body>
+
+</html>
